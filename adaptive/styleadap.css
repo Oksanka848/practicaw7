@@ -49,11 +49,23 @@
     "content-1 content-2"
     "content-3 content-3";
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 80px auto;
+  grid-template-rows: 80px 80px;
   align-items: flex-end;
   gap: 12px;
 }
 
+
+@media screen and (max-width: 300px) {
+  .mainsection {
+    display: grid;
+    grid-template-areas:
+      "content-1"
+      "content-2"
+      "content-3"
+      
+    row-gap: 10px;
+  }
+}
 
 .content-1 {
   grid-area: 2 / 1;
@@ -85,7 +97,8 @@
 
 
 @media screen and (min-widht: 300px) {
-  .footersection {
+  .footersection ,
+   {
     display: grid;
     
     align-items: flex-start;
@@ -106,6 +119,7 @@
     row-gap: 10px;
   }
 }
+
 @media screen and (max-width: 200px) {
   .footersection {
     display: none;
