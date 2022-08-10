@@ -15,6 +15,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
+
 .header {
   grid-area: header;
 }
@@ -33,9 +34,15 @@
 
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 80px auto;
-  justify-self: end;
+  align-items: flex-end;
   gap: 12px;
 }
+
+@media (min-width: 209px) { .content-3 {
+  grid-area: 2 / 1;
+}
+  }
+
 
 .content-1 {
   grid-area: 2 / 1;
@@ -60,7 +67,20 @@
   grid-template-rows: 1fr;
   column-gap: 15px;
   margin-top: 5px;
-}
+  
+  }
+
+
+@media screen and (min-widht: 300px) {
+  .footersection {
+    display: grid;
+    
+    align-items: flex-start;
+
+  }
+    
+  }
+ 
 
 .footer-1 {
   grid-area: footer-1;
