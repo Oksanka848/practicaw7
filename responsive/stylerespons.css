@@ -29,12 +29,9 @@
 
 .mainsection {
   display: grid;
- 
-
+  height: 35%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1/2fr 1fr;
-  justify-self: center;
-  align-self: center;
+  place-self: center;
   gap: 0.75em;
 }
 
