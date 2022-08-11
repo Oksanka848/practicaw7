@@ -14,7 +14,7 @@
     "main main main aside"
     "footer footer footer footer";
   grid-template-columns: 15% 35% 35% 15%;
-  grid-template-rows: 15% 70% 15%;
+  grid-template-rows: 15% 65% 30%;
   font-size: max(0.8em, min(0.2em));
 }
 
@@ -34,9 +34,8 @@
   display: grid;
   height: 35%;
   grid-template-columns: repeat(2, minmax(30%, 1fr));
-  place-self: center;
-  font-size: optional;
-  gap: 0.75em;
+  align-self: center;
+    gap: 0.75em;
 }
 
 .content-1 {
